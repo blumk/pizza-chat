@@ -34,17 +34,16 @@ const Tab2: React.FunctionComponent<RouteComponentProps> = ({ history }) => {
             <IonButton>Chat</IonButton>
           </IonCardContent>
         </IonCard>
-      </IonContent>
-      <IonContent>
+
         <IonCard className="welcome-card">
-          <img src="/assets/hawaii.jpg" alt="" height="150px" />
+          <img src="/assets/fries.jpeg" alt="" height="150px" />
           <IonCardHeader>
-            <IonCardSubtitle>Favorite</IonCardSubtitle>
-            <IonCardTitle>Pizza Hawaii Channel</IonCardTitle>
+            <IonCardSubtitle>Newcomer</IonCardSubtitle>
+            <IonCardTitle>Pizza Fries Channel</IonCardTitle>
           </IonCardHeader>
           <IonCardContent>
-            Hawaiian pizza is a pizza topped with tomato sauce, cheese,
-            pineapple, and back bacon or ham.
+            French Fry Pizza is one of those epic recipes. There's always that
+            debate over going out to eat burgers and fries versus pizza
             <IonButton>Chat</IonButton>
           </IonCardContent>
         </IonCard>

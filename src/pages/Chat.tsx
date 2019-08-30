@@ -28,7 +28,6 @@ export const Chat = () => {
   const [room, setRoom] = useState("");
   const [input, setInput] = useState("");
 
-  // const [socket] = useSocket("https://open-chat-naostsaecf.now.sh");
   const [socket] = useSocket("https://pizzas-chat.herokuapp.com/");
   socket.connect();
 
