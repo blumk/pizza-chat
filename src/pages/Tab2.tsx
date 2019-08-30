@@ -31,7 +31,7 @@ const Tab2: React.FunctionComponent<RouteComponentProps> = ({ history }) => {
           <IonCardContent>
             Hawaiian pizza is a pizza topped with tomato sauce, cheese,
             pineapple, and back bacon or ham.
-            <IonButton>Chat</IonButton>
+            <IonButton href="/tab1?pizza=hawaii">Chat</IonButton>
           </IonCardContent>
         </IonCard>
 
@@ -44,7 +44,7 @@ const Tab2: React.FunctionComponent<RouteComponentProps> = ({ history }) => {
           <IonCardContent>
             French Fry Pizza is one of those epic recipes. There's always that
             debate over going out to eat burgers and fries versus pizza
-            <IonButton>Chat</IonButton>
+            <IonButton href="/tab1?pizza=fries">Chat</IonButton>
           </IonCardContent>
         </IonCard>
       </IonContent>

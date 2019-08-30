@@ -11,9 +11,7 @@ const ChatLogin: React.FunctionComponent = () => {
           <IonTitle>Pizza Chat</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
-        <Chat></Chat>
-      </IonContent>
+      <IonContent>{/* <Chat></Chat> */}</IonContent>
     </>
   );
 };

@@ -22,7 +22,11 @@ const Online = (props: any) =>
     </li>
   ));
 
-export const Chat = () => {
+interface Props {
+  channel: string;
+}
+
+export const Chat = (props: Props) => {
   const [id, setId] = useState("");
   const [nameInput, setNameInput] = useState("");
   const [room, setRoom] = useState("");
@@ -35,7 +39,14 @@ export const Chat = () => {
   const [online, setOnline] = useImmer([]);
 
   useEffect(() => {
-    console.log("effect");
+    const name = "Pizza-Lover" + ((Math.random() * (99 - 10 + 1)) << 0);
+    setNameInput(name);
+    console.log(name);
+    setId(name);
+    socket.emit("join", name, props.channel);
+  }, [props.channel]);
+
+  useEffect(() => {
     socket.on("message que", (nick: any, message: any) => {
       setMessages((draft: any) => {
         draft.push([nick, message]);
@@ -76,14 +87,14 @@ export const Chat = () => {
     });
   }, [setMessages, setOnline, socket]);
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    if (!nameInput) {
-      return alert("Name can't be empty");
-    }
-    setId(nameInput);
-    socket.emit("join", nameInput, room);
-  };
+  // const handleSubmit = (e: any) => {
+  //   e.preventDefault();
+  //   if (!nameInput) {
+  //     return alert("Name can't be empty");
+  //   }
+  //   setId(nameInput);
+  //   socket.emit("join", nameInput, room);
+  // };
 
   const handleSend = (e: any) => {
     e.preventDefault();
@@ -113,7 +124,7 @@ export const Chat = () => {
     </section>
   ) : (
     <div style={{ textAlign: "center", margin: "30vh auto", width: "70%" }}>
-      <form onSubmit={event => handleSubmit(event)}>
+      {/* <form onSubmit={event => handleSubmit(event)}>
         <input
           id="name"
           onChange={e => setNameInput(e.target.value.trim())}
@@ -128,7 +139,7 @@ export const Chat = () => {
         />
         <br />
         <button type="submit">Submit</button>
-      </form>
+      </form> */}
     </div>
   );
 };

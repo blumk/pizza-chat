@@ -2,16 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
   outline: none;
 }
-body {
+/* body {
   font: 16px Helvetica, Arial;
-}
+} */
 #sendform {
   background: white;
   padding: 5px;
@@ -71,4 +71,4 @@ body {
 .update {
   text-align: center;
   vertical-align: middle;
-} */
+}
