@@ -11,13 +11,17 @@
     "@types/react-dom": "^16.8.5",
     "@types/react-router": "^5.0.3",
     "@types/react-router-dom": "^4.3.1",
+    "@types/socket.io-client": "^1.4.32",
     "ionicons": "^4.6.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.0",
-    "typescript": "3.5.3"
+    "socket.io-client": "^2.2.0",
+    "typescript": "3.5.3",
+    "use-immer": "^0.3.3",
+    "use-socket.io-client": "^1.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +38,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "devDependencies": {
+    "prettier": "1.18.2"
+  }
 }

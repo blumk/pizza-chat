@@ -1,9 +1,18 @@
-import React from 'react';
-import { RouteComponentProps } from 'react-router';
-import { IonContent, IonHeader, IonItem, IonLabel, IonList, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent } from '@ionic/react';
+import React from "react";
+import { RouteComponentProps } from "react-router";
+import {
+  IonContent,
+  IonHeader,
+  IonTitle,
+  IonToolbar,
+  IonCard,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonCardTitle,
+  IonCardContent
+} from "@ionic/react";
 
 const Tab2: React.FunctionComponent<RouteComponentProps> = ({ history }) => {
-
   return (
     <>
       <IonHeader>
@@ -12,28 +21,17 @@ const Tab2: React.FunctionComponent<RouteComponentProps> = ({ history }) => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-
-      <IonCard className="welcome-card">
-          <img src="/assets/shapes.svg" alt=""/>
+        <IonCard className="welcome-card">
+          <img src="/assets/hawaii.jpg" alt="" />
           <IonCardHeader>
-            <IonCardSubtitle>Get Started</IonCardSubtitle>
-            <IonCardTitle>Welcome to Ionic</IonCardTitle>
+            <IonCardSubtitle>Favorite</IonCardSubtitle>
+            <IonCardTitle>Pizza Hawaii</IonCardTitle>
           </IonCardHeader>
           <IonCardContent>
-            <p>
-              Now that your app has been created, you'll want to start building out features and
-              components. Check out some of the resources below for next steps.
-            </p>
+            Hawaiian pizza is a pizza topped with tomato sauce, cheese,
+            pineapple, and back bacon or ham.
           </IonCardContent>
         </IonCard>
-        
-        <IonList>
-          <IonItem href="/tab2/details">
-            <IonLabel>
-              <h2>Go to detail</h2>
-            </IonLabel>
-          </IonItem>
-        </IonList>
       </IonContent>
     </>
   );
