@@ -9,7 +9,8 @@ import {
   IonCardHeader,
   IonCardSubtitle,
   IonCardTitle,
-  IonCardContent
+  IonCardContent,
+  IonButton
 } from "@ionic/react";
 
 const Tab2: React.FunctionComponent<RouteComponentProps> = ({ history }) => {
@@ -17,19 +18,34 @@ const Tab2: React.FunctionComponent<RouteComponentProps> = ({ history }) => {
     <>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Pizzas</IonTitle>
+          <IonTitle>Channels channels</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
         <IonCard className="welcome-card">
-          <img src="/assets/hawaii.jpg" alt="" />
+          <img src="/assets/hawaii.jpg" alt="" height="150px" />
           <IonCardHeader>
             <IonCardSubtitle>Favorite</IonCardSubtitle>
-            <IonCardTitle>Pizza Hawaii</IonCardTitle>
+            <IonCardTitle>Pizza Hawaii Channel</IonCardTitle>
           </IonCardHeader>
           <IonCardContent>
             Hawaiian pizza is a pizza topped with tomato sauce, cheese,
             pineapple, and back bacon or ham.
+            <IonButton>Chat</IonButton>
+          </IonCardContent>
+        </IonCard>
+      </IonContent>
+      <IonContent>
+        <IonCard className="welcome-card">
+          <img src="/assets/hawaii.jpg" alt="" height="150px" />
+          <IonCardHeader>
+            <IonCardSubtitle>Favorite</IonCardSubtitle>
+            <IonCardTitle>Pizza Hawaii Channel</IonCardTitle>
+          </IonCardHeader>
+          <IonCardContent>
+            Hawaiian pizza is a pizza topped with tomato sauce, cheese,
+            pineapple, and back bacon or ham.
+            <IonButton>Chat</IonButton>
           </IonCardContent>
         </IonCard>
       </IonContent>
